@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+/* .scroll-watcher{
+    width: 100%;
+    height: 5px;
+    position: sticky;
+    background-color: #f80008;
+    transform: scale(0, 1);
+    z-index: 23232323;
+
+    transform-origin: left;
+
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(x);
+} */
+@keyframes scroll-watcher {
+    to {transform: scale(1, 1);}
+}
+
+:root {
+    --inter: 'Inter', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --oswald: 'Oswald', sans-serif;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* float: left; */
+    width: 70px;
+    min-height: 100vh;
+    /* height: 450vh; */
+    background: #202020;
+}
+
+.navbar {
+    /* width: 100%; */
+    /* height: 100%; */
+    border-left: #E00109 1px solid;
+    margin: auto;
+}
+
+.logo {
+    margin: 2rem auto 1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+ul {
+    /* margin: 0 auto; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+li {
+    padding-bottom: 2rem;
+    /* width: 100%; */
+    list-style: none;
+
+}
+
+li a {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+li a:hover{
+    color: #E00109;
+}
+
+nav i {
+    font-size: 20px;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    /* position: relative;
+    left: 10px; */
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.nav-logo{
+    display: none;
+}
+.nav-logo img{
+    padding: .5rem;
+}
+.nav-logo .collaps{
+    display: block;
+    padding: 1.5rem;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon .dropdown i{
+    color: #fe1f27;
+    font-size: 1.5rem;
+}
+
+
+.header form {
+    position: relative;
+    width: 320px;
+}
+
+.header form .searchbox {
+    position: absolute;
+    padding: 4px 14px;
+    width: 80%;
+    left: 26px;
+    top: 18px;
+    background-color: #3b3939;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+
+.header form i {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    z-index: 232;
+    font-size: 20px;
+    font-weight: 700;
+    color: #202020;
+}
+
+.acount {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons i {
+    color: #EEEEEE;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.prof .name h6 {
+    color: #EEEEEE;
+    font-size: 14px;
+}
+
+.heading-1 {
+    font-family: var(--poppins);
+    color: #fe1f27;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.80px;
+}
+
+.p {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+
+.cover-nairobi {
+    background-color: #151515;
+    border-radius: 25px;
+    position: relative;
+    height: 300px;
+}
+
+.cover-nairobi .bg-nr .background-text {
+    -webkit-text-stroke: 0.5px #fe1f268f;
+    color: transparent;
+    font-size: 250px;
+    font-family: var(--poppins);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cover-nairobi .bg-nr img{
+    width: 850px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+.text-oswald{
+    font-family: var(--oswald);
+}
+.text-oswald span{
+    font-size: 40px;
+    color: #fe1f27;
+}
+.bt-im{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    bottom: 40px;
+    right: 20px;
+}
+.bt-im .das-btns button{
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 10px 13px rgba(91, 0, 109, 0.05);
+    border-radius: 4px;
+    font-family: var(--poppins);
+}
+.bt-im .das-btns button:first-child{
+    background-color: #E00109;
+    color: #EEEEEE;
+}
+.bt-im .das-btns button:last-child{
+    color: #E00109;
+    background-color: #EEEEEE;
+}
+
+/* .bt-im .das-img{
+    
+} */
+
+.bt-im .das-img img{
+    width: 250px;
+    border-radius: 14px;
+}
+
+.tournaments .heading-2{
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.80px;
+}
+.tournaments .p{
+    color: #fe1f27;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+.card{
+    background-color: #202020;
+}
+.card h6{
+    font-size: 12px;
+}
+.color-red{
+    color: #E00109;
+}
+.card h5{
+    font-size: 14px;
+}
+.card-data{
+    font-size: 12px;
+}
+.game-time{
+    background-color: #101010;
+    width: fit-content;
+    padding: 3px 5px;
+    border-radius: 2px;
+}
+.btns button{
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    /* box-shadow: 0px 10px 13px rgba(91, 0, 109, 0.05); */
+    border-radius: 4px;
+    font-family: var(--poppins);
+    color: #EEEEEE;
+}
+.btns button:first-child{
+    background-color: #E00109;
+}
+.btns button:last-child{
+    background-color: #202020;
+}
+
+.table tr td{
+    font-size: 13px;
+}
+.aside {
+    background-color: #151515;
+    border-radius: 8px;
+}
+.aside-details{
+    background-color: #151515;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.aside-heading{
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.aside .aside-heading h3{
+    font-size: 23px;
+}
+.aside .aside-heading p{
+    background-color: #E00109;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.data-body h6{
+    font-size: 17px;
+}
+.data-body p{
+    font-size: 8px;
+    color: #abadb5;
+}
+
+.detail-data p{
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.details-card:hover{
+    background: linear-gradient(to right, #ca1c23, #101010);
+}
+
+.aside-images div img{
+    width: 350px;
+    border-radius: 20px;;
+}
+
+footer{
+    background-color: #202020;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:767px) {
+    .das-btns{
+        position: absolute;
+        bottom: -150px !important;
+    }
+    .bg-nr{
+        opacity: .5;
+    }
+    .header form{
+        display: none;
+    }
+    .header{
+        padding-inline: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    nav{
+        display: none;
+    }
+    .acount{
+        display: none;
+    }
+    .header{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-logo{
+        display: block;
+    }
+
+    .nav-logo .collapse{
+        display: flex;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+}

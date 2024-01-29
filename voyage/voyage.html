@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voyage</title>
+  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="voyage.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-sm-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/Logo.png" alt="">Voyage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-location-dot"></i>Locations</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-plane"></i>Flights</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-bolt"></i>Activities</a>
+          </li>
+        </ul>
+        <form class="d-flex align-items-center gap-3" role="search">
+          <a href="" class="nav-link">Support</a>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- header start -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 p-md-5 mb-0 order-2 order-md-1">
+        <div class="container ms-lg-5 ps-lg-5 pt-5">
+          <h1 class="px-sm-5"><span>Let's make a tour </span><br>
+            Discover the beauty
+          </h1>
+          <p class="d-flex align-items-center gap-3 py-md-3 px-5"><i class="fa-solid fa-location-dot"></i><i
+              class="fa-solid fa-plane"></i><i class="fa-solid fa-hotel"></i></p>
+
+          <form action="" class="px-sm-5">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="mb-3 d-flex align-items-center border-bottom border-secondary-subtle">
+                  <i class="fa-solid fa-calendar"></i>
+                  <div class="">
+                    <input type="text" class="form-control border-0 rounded-0" id="floatingInputGroup1"
+                      placeholder="From Where">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3 d-flex align-items-center border-bottom border-secondary-subtle">
+                  <i class="fa-solid fa-calendar"></i>
+                  <div class="">
+                    <input type="text" class="form-control border-0 rounded-0" id="floatingInputGroup1"
+                      placeholder="To Where">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="mb-3 d-flex align-items-center border-bottom border-secondary-subtle">
+                  <i class="fa-solid fa-calendar"></i>
+                  <div class="">
+                    <input type="time" class="form-control border-0 rounded-0" id="floatingInputGroup1" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3 d-flex align-items-center border-bottom border-secondary-subtle">
+                  <i class="fa-solid fa-calendar"></i>
+                  <div class="">
+                    <input type="time" class="form-control border-0 rounded-0" id="floatingInputGroup1" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex align-items-center border-bottom border-secondary-subtle mb-3">
+                <i class="fa-solid fa-user"></i>
+                <select class="form-select form-select-sm rounded-0 border-0 " aria-label="Small select example">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Person</option>
+                  <option value="3">3 Person</option>
+                </select>
+              </div>
+              <div class="col-12 p-3">
+                <button type="button" class="btn w-100">Search Packages</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 p-0 m-0 order-1 order-md-2">
+        <img src="images/first line img.png" alt="adventuare" class="img-fluid object-fit-fill">
+      </div>
+
+      <div class="col-12 col-lg-6 p-0 m-0 mt-sm-3 mt-md-0 order-2">
+        <img src="images/header second line img.png" alt="guy in hotel room" class="img-fluid object-fit-cover">
+      </div>
+      <div class="col-12 col-lg-6 site-guid p-5 order-4">
+        <div class="container d-flex flex-column gap-4 justify-content-center">
+          <div class="d-flex align-items-center gap-3 text-white fw-bold">
+            <img src="images/plane.svg" alt="plane" class="img-fluid">
+            <p>Visit the greatest places</p>
+          </div>
+          <div class="d-flex align-items-center gap-3 text-white fw-bold">
+            <img src="images/time.svg" alt="time" class="img-fluid">
+            <p>Make your own plans.</p>
+          </div>
+          <div class="d-flex align-items-center gap-3 text-white fw-bold ">
+            <img src="images/deal.svg" alt="deal" class="img-fluid">
+            <p>Save 50% on your next trip</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header end -->
+
+  <!-- crouser start -->
+  <div class="container p-4 my-5">
+    <h3 class="text-center p-4">Flash Deals</h3>
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-auto d-none d-md-block">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card border-0">
+            <img src="images/Image + Badges.png" alt="mermaid beach resort" class="img-fluid card-img-top">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2">Mermaid Beach Resort: The most joyful way to spend your holiday</h6>
+              <p class="card-text">
+                <span><i class="fa-solid fa-location-dot"></i>Cox's Bazar</span>
+                <span><i class="fa-solid fa-calendar-days"></i>4 days</span>
+              </p>
+              <div class="card-text mb-0">
+                <p class="mb-1">$200</p>
+                <h4>
+                  $175 <span>/Per Person</span>
+                </h4>
+              </div>
+              <p class="card-text">
+                <i class="fa-solid fa-tag"></i>-15%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card border-0">
+            <img src="images/Image + Badges (1).png" alt="mermaid beach resort" class="img-fluid card-img-top">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2">Bora Bora: Enjoy a romantic cruise tour of at the sunny side of life</h6>
+              <p class="card-text">
+                <span><i class="fa-solid fa-location-dot"></i>Maldives</span>
+                <span><i class="fa-solid fa-calendar-days"></i>4 days</span>
+              </p>
+              <div class="card-text mb-0">
+                <p class="mb-1">$300</p>
+                <h4>
+                  $250 <span>/Per Person</span>
+                </h4>
+              </div>
+              <p class="card-text">
+                <i class="fa-solid fa-tag"></i>-15%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card border-0">
+            <img src="images/Image + Badges (2).png" alt="mermaid beach resort" class="img-fluid card-img-top">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2">Fihalhohi Island Resort: Luxury destination without compromise</h6>
+              <p class="card-text">
+                <span><i class="fa-solid fa-location-dot"></i>Maldives</span>
+                <span><i class="fa-solid fa-calendar-days"></i>4 days</span>
+              </p>
+              <div class="card-text mb-0">
+                <p class="mb-1">$375</p>
+                <h4>
+                  $300 <span>/Per Person</span>
+                </h4>
+              </div>
+              <p class="card-text">
+                <i class="fa-solid fa-tag"></i>-15%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto d-none d-md-block">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- crouser end -->
+
+  <!-- popular places start -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col bg-primary-first">
+
+      </div>
+      <div class="col-md-3 col-12 bg-primary me-2 d-grid pt-5 text-white">
+        <img src="images/location mark.svg" alt="" class="img-fluid mb-4">
+        <h3>Popular places</h3>
+        <p class="fs-6">Enjoy the benefits of our packages to the sites where our visitors have more fun. Properly
+          arranged with low costing.</p>
+      </div>
+      <div class="col-md-3 col-12 pt-3 p-md-0 text-center">
+        <img src="images/agra.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-3 col-12 pt-3 p-md-0 text-center">
+        <img src="images/kuala lumpur.png" alt="" class="img-fluid">
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+
+    <div class="container px-md-5 py-4">
+
+      <div class="row px-md-5">
+        <div class="col-md-8 col-12">
+          <div class="row ">
+            <div class="col-md-6 col-12 text-center mb-3 mb-md-0">
+              <img src="images/munich.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 text-center mb-3 mb-md-0">
+              <img src="images/paris.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 mt-md-4 text-center mb-3 mb-md-0">
+              <img src="images/viena.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 mt-md-4 text-center">
+              <img src="images/prague.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-12 mt-3 mt-md-0 d-flex flex-column align-items-center justify-content-center bg-warning p-5 text-white">
+          <p>Wanna travel to the most thrilling spot on the planet? We've set a bunch of surprises for you.</p>
+          <div class="d-flex align-items-center gap-3 justify-content-center">
+            <p>Click to view more</p><i class="fa-solid fa-arrow-right text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popular places end -->
+
+  <!-- dubai trip info start -->
+  <div class="container-fluid mt-5 px-0 mb-5 overflow-x-hidden">
+    <div class="row">
+      <div class="col-12 col-md-4 px-0 mx-0 mb-3 mb-md-0">
+        <img src="images/building.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6 col-12 px-0 mx-0">
+        <div class="card border-0">
+          <img src="images/car in desert.png" alt="car" class="card-img-top img-fluid">
+          <div class="card-body px-5">
+            <h6 class="card-subtitle">Share a trip to</h6>
+            <h5 class="card-title">Dubai</h5>
+            <p>Dubai, a city with many faces, is one of the world's most popular tourist destinations. The Burj Khalifa,
+              the world's highest tower, is located here. The futuristic beauty of new buildings is at the heart of
+              Dubai tourism.</p>
+          </div>
+          <p class="text-end">Read More <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+  <!-- dubai trip info end -->
+
+  <!-- popular packages start -->
+  <div class="container-fluid bg-body-secondary mb-5">
+    <div class="row">
+      <div class="col-md"></div>
+      <div class="col-md-3 col-12 text-center mb-3 mb-md-0 order-2 order-md-1">
+        <img src="images/sky the limit.png" alt="sky the limit" class="img-fluid">
+      </div>
+      <div class="col-md-3 col-12 text-center mb-3 mb-md-0 order-3 order-md-2">
+        <img src="images/beyond the blues.png" alt="beyond the blues" class="img-fluid">
+      </div>
+      <div class="col-md-3 col-12 bg-primary-first ms-md-3 d-grid pt-5 text-white order-1 order-md-3 mb-3 mb-md-0">
+        <img src="images/box.svg" alt="" class="img-fluid mb-4">
+        <h3>Popular Packages</h3>
+        <p class="fs-6">Choose the most popular bundles among our current ones.</p>
+      </div>
+      <div class="col-md  bg-primary order-md-4"></div>
+    </div>
+
+    <div class="container px-md-5">
+      <div class="row px-5 pt-md-4 mb-4">
+        <div class="col-12 col-md-4 ps-md-3 text-center mb-3 mb-md-0">
+          <img src="images/within the green.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 px-md-3 text-center mb-3 mb-md-0">
+          <img src="images/queens gambit.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-4 pe-md-4 text-center mb-3 mb-md-0">
+          <img src="images/city of canals.png" alt="" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="row px-md-5">
+        <div
+          class="col-12 col-md-8 bg-warning d-flex flex-column align-items-center justify-content-center p-5 text-white order-2 order-md-1">
+          <p>Most exclusive packages are ready <br>for you. It's only a click away!</p>
+          <div class="d-flex align-items-center justify-content-center">
+            <p>Click to view more</p><i class="fa-solid fa-arrow-right text-white"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 pe-4 text-center order-1 order-md-2 mb-3 mb-md-0">
+          <img src="images/mountain venture.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popular packages end -->
+
+  <!-- activities part start -->
+  <div class="container-fluid container-md px-md-5 my-md-5">
+    <div class="row px-md-5">
+      <div class="col-md-8 col-12 px-0 mx-0">
+        <div class="card border-0">
+          <img src="images/hills.png" alt="car" class="card-img-top img-fluid">
+          <div class="card-body pt-md-5 ps-md-0 pe-md-5 d-flex flex-column justify-content-end mt-5 px-5 px-md-0">
+            <h6 class="card-subtitle">Participate in activities like</h6>
+            <h5 class="card-title">Bungee Jumping</h5>
+            <p>Bungee jumping, often known as bungy jumping, is a sport in which a person jumps from a considerable
+              height while attached to a long elastic line. Usually, the pad is built on
+              a high structure like a structure or a crane, a bridge across a steep ravine</p>
+          </div>
+          <p class="text-end pe-5">Read More <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 px-0 mx-0 text-center">
+        <img src="images/adventure.png" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <!-- activities part end -->
+
+  <!-- hotel rooms images start -->
+  <div class="container-md container-fluid p-md-5 pb-0 mt-5">
+    <div class="row p-md-5">
+      <div
+        class="col-12 col-md-4 bg-primary d-flex flex-column align-items-start justify-content-end p-md-4 mb-3 mb-md-0">
+        <img src="images/hotel icon.svg" alt="" class="img-fluid mb-4">
+        <h3>Discover our best hotels to stay</h3>
+        <p class="fs-6">Bundle tickets to any hotel to save on your whole order. Follow bundle it! method by picking the
+          right hotel accommodation once you add your tickets to your cart.</p>
+      </div>
+
+      <div class="col-12 col-md-8 text-center">
+        <div class="row">
+          <div class="col-md-6 col-12 mb-3 mb-md-0">
+            <img src="images/moon house hotel.png" alt="moon house hotel" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-12 mb-3 mb-md-0">
+            <img src="images/blue mosque hotel.png" alt="blue mosque hotel" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-12 mt-md-3 mb-3 mb-md-0">
+            <img src="images/hotel royal.png" alt="hotel royal" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-12 mt-md-3 mb-3 mb-md-0">
+            <img src="images/The Rin Boutique Hotel.png" alt="the rin boutique hotel" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-12 bg-warning mt-md-3">
+        <div class="container d-flex align-items-center justify-content-around text-white p-4">
+          <p class="w-25 fs-6">In our offers, we have more hotels. Just to make your stay easy for your best interests.
+          </p>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <p class="fs-5">Click to view more</p><i class="fa-solid fa-arrow-right text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hotel rooms images end -->
+
+  <!-- travel bags crousel start -->
+  <div class="container p-4 pt-0">
+    <h3 class="text-center p-4">Travel Blogs</h3>
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-auto d-none d-md-block">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card border-0">
+            <img src="images/john.png" alt="mermaid beach resort" class="img-fluid card-img-top">
+            <div class="card-body">
+              <p class="card-text d-flex align-items-center justify-content-center gap-2">
+                <span><i class="fa-solid fa-heart d-flex flex-column"></i>244</span>
+                <span><i class="fa-solid fa-eye d-flex flex-column"></i>244</span>
+                <span><i class="fa-solid fa-share d-flex flex-column"></i>244</span>
+              </p>
+              <h6 class="card-subtitle mb-2">15 Best Day Trips from Portland Oregon</h6>
+              <div class="card-text mb-0">
+                <p class="mb-1">The structure of the trip blog is only a white canvas to highlight the atmospheric and
+                  immersive.</p>
+              </div>
+              <p class="card-text text-center">
+                <i class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card border-0">
+            <img src="images/haley.png" alt="mermaid beach resort" class="img-fluid card-img-top">
+            <div class="card-body">
+              <p class="card-text d-flex align-items-center justify-content-center gap-2">
+                <span><i class="fa-solid fa-heart d-flex flex-column"></i>244</span>
+                <span><i class="fa-solid fa-eye d-flex flex-column"></i>244</span>
+                <span><i class="fa-solid fa-share d-flex flex-column"></i>244</span>
+              </p>
+              <h6 class="card-subtitle mb-2">Famous Roads for Great Drives in California</h6>
+              <div class="card-text mb-0">
+                <p class="mb-1">I first discovered about famous road in california when I flew with KLM to Europe in
+                  2018.</p>
+              </div>
+              <p class="card-text text-center">
+                <i class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card border-0">
+            <img src="images/jeff.png" alt="mermaid beach resort" class="img-fluid card-img-top">
+            <div class="card-body">
+              <p class="card-text d-flex align-items-center justify-content-center gap-2">
+                <span><i class="fa-solid fa-heart d-flex flex-column"></i>244</span>
+                <span><i class="fa-solid fa-eye d-flex flex-column"></i>244</span>
+                <span><i class="fa-solid fa-share d-flex flex-column"></i>244</span>
+              </p>
+              <h6 class="card-subtitle mb-2">7 of the Best Train Trips in Canada</h6>
+              <div class="card-text mb-0">
+                <p class="mb-1">On this very stunning rail ride from Vancouver to Calgary, take in the stunning vistas
+                  andspectacular.</p>
+              </div>
+              <p class="card-text text-center">
+                <i class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto d-none d-md-block">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- travel bags crousel end -->
+
+  <!-- flights list start -->
+
+  <div class="container-fluid my-5">
+    <h3 class="text-center p-4">Flights to Popular Places at the Best Costs</h3>
+
+    <div class="row">
+      <div class="col-md-2 col-6 first p-4 small-cards">
+        <h3>Dhaka - Chittagong</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 second p-4 small-cards">
+        <h3>Dhaka - Sylhet</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 third p-4 small-cards">
+        <h3>Dhaka - Chittagong</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards four">
+        <h3>Dhaka - Chittagong</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards five">
+        <h3>Dhaka - Cox's Bazar</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards six">
+        <h3>Dhaka - Sylhet</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards seven">
+        <h3>Dhaka - Cox's Bazar</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards eight">
+        <h3>Dhaka - Chittagong</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards nine">
+        <h3>Dhaka - Cox's Bazar</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards ten">
+        <h3>Dhaka - Chittagong</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards eleven">
+        <h3>Dhaka - Sylhet</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div class="col-md-2 col-6 p-4 small-cards twelve">
+        <h3>Dhaka - Cox's Bazar</h3>
+        <p>From $100</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </div>
+  <!-- flights list end -->
+
+
+  <!-- mobile phone with maps -->
+  <div class="container">
+    <div class="row ps-md-5">
+      <div class="col-md"></div>
+      <div class="col-md-6 col-12 mobile ms-md-4">
+        <div class="row mobile-footer">
+          <div class="col-4  position-relative mob-back">
+            <div class="">
+              <img src="images/Phone Mockup.png" alt="phone Mockup" class="img-fluid phone-mockup">
+            </div>
+          </div>
+
+          <div class="col-6  d-md-flex align-items-md-center justify-content-md-center">
+            <div class="">
+              <h3 class="fs-3 ms-3">Get the app</h3>
+              <div class="stores">
+                <img src="images/Google Play.png" alt="play store" class="img-fluid">
+                <img src="images/App Store.png" alt="app store" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md"></div>
+    </div>
+  </div>
+
+
+  <!-- footer start -->
+  <div class="container-fluid footer">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-md-3">
+        <div class="container d-flex flex-column py-5">
+          <h3 class=""><img src="images/Logo.png" alt="Voyage" class="img-fluid">Voyage</h3>
+          <a href="#" class="mt-4">News</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy</a>
+          <a href="#">About Us</a>
+          <a href="#">FAQs</a>
+        </div>
+      </div>
+      <div class="col-md-3 bg-primary-first text-white p-md-5 py-5">
+        <div class="container">
+
+          <p class="d-flex align-items-center gap-3"><i class="fa-solid fa-phone"></i><span>+9390219390</span></p>
+          <p class="d-flex align-items-center gap-3"><i class="fa-solid fa-envelope"></i><a
+              href="mailto:something@email.com" class="text-white fw-light">something@email.com</a></p>
+          <cite class="d-flex align-items-start gap-3"><i class="fa-solid fa-location-dot"></i>333, Lorem Street,
+            Albania, California United States of America</cite>
+
+          <div class="soc-icons mt-4 d-flex align-items-center gap-4">
+            <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col bg-primary"></div>
+    </div>
+  </div>
+  <!-- footer end -->
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
